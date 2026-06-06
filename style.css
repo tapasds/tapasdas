@@ -70,7 +70,21 @@ color:white;
 }
 
 .hero{
-min-height:80vh;
+min-height:60vh;
+display:flex;
+align-items:center;
+background:
+linear-gradient(
+90deg,
+rgba(34,197,94,.08),
+transparent 30%
+),
+linear-gradient(
+180deg,
+#030712,
+#071226
+);
+}
 display:flex;
 align-items:center;
 background:
@@ -87,8 +101,10 @@ linear-gradient(
 }
 
 .hero h1{
-font-size:64px;
-line-height:1.05;
+font-size:52px;
+line-height:1.1;
+max-width:900px;
+margin-bottom:20px;
 }
 
 .hero h1 span{
@@ -97,22 +113,23 @@ color:var(--blue);
 
 .role{
 color:var(--accent);
-font-size:18px;
+font-size:14px;
 letter-spacing:2px;
-margin-bottom:20px;
-text-transform:none;
+margin-bottom:12px;
+font-weight:600;
 }
 
 .summary{
-max-width:800px;
-font-size:20px;
+max-width:850px;
+font-size:16px;
 color:var(--muted);
-margin-bottom:30px;
+margin-bottom:24px;
+line-height:1.8;
 }
 
 .btn{
 display:inline-block;
-padding:14px 24px;
+padding:12px 20px;
 border-radius:10px;
 text-decoration:none;
 font-weight:600;
