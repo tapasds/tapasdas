@@ -247,3 +247,31 @@ display:none;
 }
 
 }
+
+.company-logos{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:60px;
+flex-wrap:wrap;
+margin-top:40px;
+}
+
+.company-logos img{
+height:60px;
+max-width:180px;
+object-fit:contain;
+opacity:.85;
+transition:.3s;
+filter:grayscale(100%);
+}
+
+.company-logos img:hover{
+opacity:1;
+transform:translateY(-4px);
+filter:none;
+}
+
+#companies{
+padding-top:30px;
+}
