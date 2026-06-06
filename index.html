@@ -5,50 +5,140 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Tapas Das | Technical Support Lead</title>
 
+<style>
+
 html{
 scroll-behavior:smooth;
 }
 
-body{
-font-family:Arial,sans-serif;
+*{
 margin:0;
 padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial,sans-serif;
 background:#0f172a;
 color:white;
+line-height:1.7;
 }
 
 header{
-padding:80px 10%;
-text-align:center;
 background:#111827;
+padding:100px 10%;
+text-align:center;
 }
 
 h1{
-font-size:48px;
+font-size:56px;
 margin-bottom:10px;
 }
 
-h2{
+.hero-title{
+font-size:28px;
+color:#38bdf8;
+margin-bottom:20px;
+}
+
+.hero-text{
+max-width:900px;
+margin:auto;
+font-size:18px;
+}
+
+.btn{
+display:inline-block;
+padding:14px 28px;
+margin-top:30px;
+border-radius:8px;
+font-weight:bold;
+text-decoration:none;
+margin-right:10px;
+}
+
+.btn-primary{
+background:#38bdf8;
+color:black;
+}
+
+.btn-secondary{
+border:1px solid #38bdf8;
 color:#38bdf8;
 }
 
 section{
-padding:60px 10%;
+padding:70px 10%;
+}
+
+.section-title{
+font-size:32px;
+margin-bottom:25px;
+color:#38bdf8;
 }
 
 .card{
 background:#1e293b;
-padding:20px;
-margin:15px 0;
-border-radius:10px;
+padding:25px;
+border-radius:12px;
+margin-bottom:20px;
+}
+
+.skills{
+display:flex;
+flex-wrap:wrap;
+gap:10px;
 }
 
 .skills span{
-display:inline-block;
 background:#334155;
 padding:10px 15px;
-margin:5px;
 border-radius:20px;
+}
+
+.timeline-card{
+background:#1e293b;
+padding:25px;
+border-left:5px solid #38bdf8;
+border-radius:10px;
+margin-bottom:20px;
+}
+
+.project-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+}
+
+.project-card{
+background:#1e293b;
+padding:25px;
+border-radius:12px;
+}
+
+.project-card h3{
+margin-bottom:10px;
+color:#38bdf8;
+}
+
+.achievement-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.achievement-card{
+background:#1e293b;
+padding:25px;
+border-radius:12px;
+text-align:center;
+}
+
+.resume-box{
+background:#1e293b;
+padding:30px;
+border-radius:12px;
+text-align:center;
 }
 
 a{
@@ -57,87 +147,54 @@ text-decoration:none;
 }
 
 footer{
-text-align:center;
-padding:20px;
 background:#111827;
+padding:25px;
+text-align:center;
 }
+
 </style>
 
 </head>
+
 <body>
 
 <header>
 
 <h1>Tapas Das</h1>
 
-<h2>Technical Support Lead</h2>
-
-<p style="font-size:22px;color:#38bdf8;margin-top:20px;">
-Driving Operational Excellence Through Technology, Automation & AI
-</p>
-
-<p style="max-width:850px;margin:auto;margin-top:25px;line-height:1.8;">
-
-Technical Support Lead with 8+ years of experience across Production Support,
-Platform Operations, Incident Management, Service Governance,
-Operational Reporting and Team Leadership.
-
-Focused on improving operational efficiency, service reliability,
-stakeholder communication and business outcomes through process
-improvement, automation and practical AI adoption.
-
-</p>
-
-<div style="margin-top:40px;">
-
-<a href="#projects"
-style="
-background:#38bdf8;
-color:#000;
-padding:14px 24px;
-border-radius:8px;
-margin-right:10px;
-font-weight:bold;">
-View Projects
-</a>
-
-<a href="#contact"
-style="
-border:1px solid #38bdf8;
-padding:14px 24px;
-border-radius:8px;">
-Contact Me
-</a>
-
+<div class="hero-title">
+Technical Support Lead
 </div>
+
+<p class="hero-text">
+
+Driving Operational Excellence Through Technology, Automation & AI
+
+<br><br>
+
+Technical Support Lead with 8+ years of experience across Production Support, Platform Operations, Incident Management, Service Governance, Operational Reporting and Team Leadership.
+
+Focused on improving operational efficiency, operational continuity, stakeholder communication and business outcomes through process improvement, automation and practical AI adoption.
+
+</p>
+
+<a href="#projects" class="btn btn-primary">View Projects</a>
+
+<a href="#contact" class="btn btn-secondary">Contact Me</a>
 
 </header>
 
 <section>
 
-<h2>About Me</h2>
+<h2 class="section-title">About Me</h2>
 
 <div class="card">
-Born in Assam and raised in Kolkata. Computer Science graduate with experience across HP, Wipro and Americana. Passionate about technology, operations, AI, automation and continuous learning.
-</div>
 
-</section>
+Born in Assam and raised in Kolkata.
 
-<section>
+Computer Science graduate with over 8 years of experience across Hewlett Packard, Wipro and Americana.
 
-<h2>Core Expertise</h2>
-
-<div class="skills">
-
-<span>Incident Management</span>
-<span>Production Support</span>
-<span>Platform Operations</span>
-<span>Service Delivery</span>
-<span>RCA</span>
-<span>Operational Reporting</span>
-<span>Team Leadership</span>
-<span>Automation</span>
-<span>AI Leverage</span>
+My journey evolved from Technical Support into Platform Operations, Production Support, Incident Management, Service Governance and Operations Leadership.
 
 </div>
 
@@ -145,20 +202,20 @@ Born in Assam and raised in Kolkata. Computer Science graduate with experience a
 
 <section>
 
-<h2>Career Journey</h2>
+<h2 class="section-title">Career Journey</h2>
 
-<div class="card">
-<h3>Americana</h3>
-Technical Support Lead – Platform Operations
+<div class="timeline-card">
+<h3>Americana (2025 - Present)</h3>
+Technical Support Lead
 </div>
 
-<div class="card">
-<h3>Wipro</h3>
-Team Lead → Compliance Auditor → SME
+<div class="timeline-card">
+<h3>Wipro (2018 - 2025)</h3>
+SME → Compliance Auditor → Team Lead
 </div>
 
-<div class="card">
-<h3>HP</h3>
+<div class="timeline-card">
+<h3>Hewlett Packard (2017 - 2018)</h3>
 Technical Support Associate
 </div>
 
@@ -166,25 +223,79 @@ Technical Support Associate
 
 <section>
 
-<h2>Projects</h2>
+<h2 class="section-title">Core Expertise</h2>
 
-<div class="card">
-ALMP Technician Performance Audit Framework
-</div>
+<div class="skills">
 
-<div class="card">
-Monthly Operations Reporting Framework
-</div>
+<span>Incident Management</span>
+<span>Production Support</span>
+<span>Platform Operations</span>
+<span>SLA Management</span>
+<span>Operational Reporting</span>
+<span>Queue Management</span>
+<span>Service Delivery</span>
+<span>Stakeholder Management</span>
+<span>Team Leadership</span>
+<span>Automation</span>
+<span>AI Productivity</span>
 
-<div class="card">
-AI-Assisted Executive Reporting Workflow
 </div>
 
 </section>
 
 <section>
 
-<h2>AI Toolkit</h2>
+<h2 class="section-title">Key Achievements</h2>
+
+<div class="achievement-grid">
+
+<div class="achievement-card">
+<h3>8+</h3>
+<p>Years Experience</p>
+</div>
+
+<div class="achievement-card">
+<h3>Multi Country</h3>
+<p>Operations Support Coverage</p>
+</div>
+
+<div class="achievement-card">
+<h3>Leadership</h3>
+<p>Operations Governance & Team Management</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2 class="section-title">Projects</h2>
+
+<div class="project-grid">
+
+<div class="project-card">
+<h3>ALMP Technician Performance Audit Framework</h3>
+<p>Operational analytics and performance governance framework.</p>
+</div>
+
+<div class="project-card">
+<h3>Monthly Operations Reporting Framework</h3>
+<p>Executive SLA and KPI reporting framework.</p>
+</div>
+
+<div class="project-card">
+<h3>AI Assisted Executive Reporting</h3>
+<p>Use of AI tools to accelerate RCA, MOM and reporting activities.</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">AI Toolkit</h2>
 
 <div class="skills">
 
@@ -193,9 +304,10 @@ AI-Assisted Executive Reporting Workflow
 <span>Gemini</span>
 <span>NotebookLM</span>
 <span>Canva AI</span>
+<span>Grok</span>
+<span>ElevenLabs</span>
 <span>Lovable</span>
 <span>Emergent</span>
-<span>ElevenLabs</span>
 
 </div>
 
@@ -203,21 +315,31 @@ AI-Assisted Executive Reporting Workflow
 
 <section>
 
-<h2>Contact</h2>
+<h2 class="section-title">Resume</h2>
+
+<div class="resume-box">
+
+Resume PDF download section will be added next.
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="section-title">Contact</h2>
 
 <div class="card">
 
-Email:
-<a href="mailto:tapas.das222@gmail.com">
-tapas.das222@gmail.com
-</a>
+<p>Email: tapas.das222@gmail.com</p>
 
-<br><br>
+<br>
 
-LinkedIn:
-<a href="#">
-Add LinkedIn URL Later
-</a>
+<p>GitHub: github.com/tapasds</p>
+
+<br>
+
+<p>LinkedIn: Add LinkedIn URL Here</p>
 
 </div>
 
@@ -225,7 +347,7 @@ Add LinkedIn URL Later
 
 <footer>
 
-© 2026 Tapas Das
+© 2026 Tapas Das | Technical Support Lead
 
 </footer>
 
