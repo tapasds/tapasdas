@@ -101,7 +101,7 @@ color:var(--accent);
 font-size:18px;
 letter-spacing:2px;
 margin-bottom:20px;
-text-transform:uppercase;
+text-transform:none;
 }
 
 .summary{
