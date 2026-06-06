@@ -329,3 +329,20 @@ grid-template-columns:1fr;
 }
 
 }
+/* Project page text should use normal case */
+
+.card h3{
+text-transform:none !important;
+}
+
+.card p{
+text-transform:none !important;
+}
+
+.section-title{
+text-transform:none !important;
+}
+
+.role{
+text-transform:none !important;
+}
