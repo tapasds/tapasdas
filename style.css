@@ -247,31 +247,55 @@ display:none;
 }
 
 }
-
-.company-logos{
-display:flex;
-justify-content:center;
-align-items:center;
-gap:60px;
-flex-wrap:wrap;
-margin-top:40px;
-}
-
-.company-logos img{
-height:60px;
-max-width:180px;
-object-fit:contain;
-opacity:.85;
-transition:.3s;
-filter:grayscale(100%);
-}
-
-.company-logos img:hover{
-opacity:1;
-transform:translateY(-4px);
-filter:none;
-}
-
 #companies{
-padding-top:30px;
+padding-top:20px;
+}
+
+.company-showcase{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:24px;
+margin-top:30px;
+}
+
+.company-card{
+display:flex;
+align-items:center;
+gap:20px;
+padding:20px;
+background:#111827;
+border:1px solid rgba(255,255,255,.08);
+border-radius:16px;
+transition:.3s;
+}
+
+.company-card:hover{
+transform:translateY(-4px);
+border-color:#22c55e;
+}
+
+.company-card img{
+width:80px;
+height:80px;
+object-fit:contain;
+background:white;
+padding:8px;
+border-radius:12px;
+}
+
+.company-info h3{
+margin:0;
+font-size:20px;
+}
+
+.company-info p{
+margin:8px 0;
+font-size:14px;
+opacity:.9;
+}
+
+.company-info span{
+color:#22c55e;
+font-weight:600;
+font-size:14px;
 }
