@@ -87,9 +87,8 @@ linear-gradient(
 }
 
 .hero h1{
-font-size:72px;
-line-height:1;
-margin-bottom:20px;
+font-size:64px;
+line-height:1.05;
 }
 
 .hero h1 span{
